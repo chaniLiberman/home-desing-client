@@ -1,7 +1,7 @@
 Project Title HOME-DESING
 Furniture store Online and complementary products for the home
 Front-End:
-•	React
+•	React 
 •	Json-server
 •	Formik & Yup
 •	React Tostify
