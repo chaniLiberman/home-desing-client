@@ -1,38 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Marck+Script&family=Pattaya&family=Ysabeau+Office:wght@300;400&display=swap');
+:root {
+   --color-primary: #ffffff;
+  --color-secondary: #354c58;
+  --color-modal: #ededed;
+  --color-title: #212529;
+  --color-text: #12181b;
+  --color-white: #ffffff;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #dbe1e8;
+  --color-grey-2: #b2becd;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #2a2e35;
+  --color-grey-6: #12181b;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --box-shadow-2: 0 2px 5px rgba(248, 248, 248, 0.2);
+  --hover-color: #fff;
+  --color-gold:#947427;
+  --background-image: url("/public/images/backGrondMain2.jpg");
+  --background-color-blur: rgba(0, 0, 0, 0.02);
+  --color-social:#000;
+  --font-weight:550;
+}
+
+.dark {
+  --color-primary: #212529;
+  --color-secondary: #fff;
+  --color-modal: #414952;
+  --color-title: #bfd0e6;
+  --color-text: #f8f8f8;
+  --color-white: #cdcecf;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --box-shadow-2: 0 2px 5px rgba(248, 248, 248, 0.2);
+  --hover-color: #fff;
+  --color-gold:#fff;
+  --background-image: url("/public/images/backGrondMain1.jpg");
+  --background-color-blur: rgba(0, 0, 0, 0.1);
+  --color-social:#ff0000;
+  --font-weight:590;
+}
+
+/* body[lang="he"] {
+  font-family: 'HebrewFont', sans-serif;
+} */
+
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  transition: filter 0.5s;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-container:hover img {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.images img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.images:hover img {
+  transform: scale(1.1);
+}
+
 .App {
-  text-align: center;
+  background-image: var(--background-image);
+  background-size: cover;
+  color:var(--color-gold);
+  font-family: 'Ysabeau Office', sans-serif;
+  font-weight: var(--font-weight);
+    text-align: center;
+    /* background-color: rgb(251, 244, 236); */
+    /* color: #846D62; */
+}
+.navbarStyle{
+  background-color: var(--color-primary);
+}
+.navbar-nav a.nav-link {
+  color: var(--color-gold);
+  text-decoration: none;
+  font-size: 1.2rem;
+  /* transition: color 0.3s; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav a.nav-link:hover {
+  color: #A8A29C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-nav a.nav-link.active {
+  color: #000;
+}
+.mainText{
+  font-weight: 700;
+}
+.aboutStyle p
+{
+  color: var(--color-secondary);
+}
+.input{
+  color: #000;
+}
+.footerStyle{
+  background-color: var(--color-black);
+}
+.footerStyle ul{
+  color: var(--color-gold);
+}
+.footerStyle p{
+  color: var(--color-white);
+}
+/* .footerStyle {
+  background-color: #4e3e37;
+  text-align: right;
+} */
+
+.footerImg {
+  vertical-align: middle;
+  width: 180px;
+  height: 120px;
+  margin-top: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.backGround {
+  position: relative;
+  line-height: 1.8;
+  backdrop-filter: blur(10px);
+  background-color:rgba(--background-color-blur);
+}
+
+.selector{
+  width: 7.5rem;
+}
+
+h5 {
+  color:var(--color-gold);
+}
+.nav-link {
+  color:var(--color-gold);
+  font-size: 1.1rem;
+}
+
+.products-container {
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
 }
